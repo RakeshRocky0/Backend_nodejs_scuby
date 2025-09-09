@@ -28,6 +28,6 @@ app.use('/uploads', express.static('uploads'));
 app.listen(PORT,()=>{
     console.log(`Server is running on port ${PORT}`)
 });     
-app.use("/", (req,res)=>{
+app.use('/', (req,res)=>{
     res.send("<h1>Welcome to the page</h1>");
 });
